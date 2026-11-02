@@ -1,0 +1,36 @@
+{
+  "name": "hms-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "node -e \"const fs = require('fs'); try { fs.rmSync('.next', { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); } catch (e) {}\"",
+    "predev": "npm run clean",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.7",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.477.0",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "socket.io-client": "^4.8.1",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.32"
+  }
+}

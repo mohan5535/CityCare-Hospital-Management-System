@@ -1,0 +1,27 @@
+{
+  "name": "hospital-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hospital Appointment Booking & Management System (HMS)",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test:backend": "npm --prefix backend test",
+    "test": "npm run test:backend"
+  },
+  "keywords": [
+    "hospital",
+    "appointment-booking",
+    "healthcare",
+    "teleconsultation",
+    "socketio",
+    "nextjs",
+    "express"
+  ],
+  "author": "HMS Engineering Team",
+  "license": "ISC"
+}
